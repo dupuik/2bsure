@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Domain Administrator">
     <meta name="reply-to" content="admin@kjtd.net">
-    <meta name="author" content="Nickie Mai">
-    <meta name="reply-to" content="nickie.mai@gmail.com">
     <meta name="description" content="Domain for sale. Popular, easy to remember.">
     <link rel="canonical" href="https://2bsure.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   
     <title>2BSURE - Parked at: KJTDNET</title>
 
@@ -30,10 +30,12 @@
         body, html {
           height: 100%;
           margin: 0;
+          /* Applying Montserrat globally */
+          font-family: 'Montserrat', sans-serif;
+          background-color: #000;
         }
 
         .bgimg {
-          /* Full screen background */
           background-image: url('/forestbridge.jpg');
           min-height: 100%;
           background-position: center;
@@ -41,8 +43,6 @@
           background-attachment: fixed;
           position: relative;
           color: white;
-          font-family: "Courier New", Courier, monospace;
-          font-size: 25px;
         }
 
         .middle {
@@ -54,27 +54,44 @@
           width: 100%;
         }
 
+        .middle h1 {
+          font-size: 4rem; /* Large and Bold */
+          font-weight: 900;
+          letter-spacing: 5px;
+          margin: 0;
+          text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
         .bottom {
           position: absolute;
-          bottom: 20px; /* Spacing from the bottom edge */
+          bottom: 30px;
           left: 0;
           width: 100%;
           text-align: center;
+          font-weight: 700;
+          font-size: 14px;
+          letter-spacing: 1px;
+          line-height: 1.6;
+          text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
         }
 
-        .bottom h4 {
-          font-size: 16px;
-          margin: 0;
+        /* Email Link Styling */
+        .bottom a {
+            color: #add8e6; /* Light Blue */
+            text-decoration: none; /* No underline */
+            transition: color 0.3s ease, text-shadow 0.3s ease;
         }
 
-        a {
-            color: white;
-            text-decoration: underline;
+        .bottom a:hover {
+            color: #00f2ff; /* Brighter "Pop" Color */
+            text-shadow: 0 0 10px rgba(0, 242, 255, 0.6);
         }
 
         hr {
-          margin: auto;
-          width: 40%;
+          margin: 20px auto;
+          width: 100px;
+          border: 0;
+          border-top: 3px solid white;
         }
     </style>
 </head>
@@ -87,8 +104,8 @@
         </div>
 
         <div class="bottom">
-            <h4>Copyright 2026 - <a href="mailto:admin@kjtd.net">Kenneth J. Dupuis and Nickie Mai</a>. All Rights Reserved.<br>
-            Host: kjtd.net</h4>
+            <div>Copyright 2026 - <a href="mailto:admin@kjtd.net">Kenneth J. Dupuis and Nickie Mai</a>. All Rights Reserved.</div>
+            <div>Host: kjtd.net</div>
         </div>
     </div>
 </body>
